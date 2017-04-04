@@ -31,7 +31,7 @@ def bold(msg):
 def print_there(x, y, text):
      sys.stdout.write("\x1b7\x1b[%d;%df\033[7m%s\033[0m\x1b8" % (x, y, text)) # bold
      sys.stdout.flush()
-     time.sleep(random.uniform(0.001, 0.005))  # wait from 1 to 9 ms
+     time.sleep(random.uniform(0.001, 0.004))  # wait from 1 to 4 ms
      sys.stdout.write("\x1b7\x1b[%d;%df%s\x1b8" % (x, y, text))
      sys.stdout.flush()
 
